@@ -85,6 +85,7 @@ class Calender extends React.Component {
             )
         })
         let itemSavedText = this.state.savedStatus? "Saved":"Not Saved"
+        let itemSavedStyle = this.state.savedStatus? {color: 'green'}:{color: 'red'}
         return(
             <div>
                 <HeaderElement mainlogo={this.props.mainlogo} feature={this.props.feature}/>
@@ -117,7 +118,7 @@ class Calender extends React.Component {
                             </Form.Group>
                             
                             <Form.Group>
-                                <Form.Text className="text-muted">
+                                <Form.Text style={itemSavedStyle}>
                                     <b>Item</b> {itemSavedText}
                                 </Form.Text>
                             </Form.Group>

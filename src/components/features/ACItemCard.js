@@ -22,7 +22,7 @@ function ACItemCard(props){
             {/* Item Card Style */}
             <Card style={{ width: '12rem' }}>
                 <Card.Header>{props.item.Name}</Card.Header>
-                <Card.Img variant="top" src={props.item.Image} height="80px" width="80px"/>
+                <Card.Img variant="top" src={props.item.Image} style={{margin: 'auto', width: '50%'}}/>
                 <Card.Body>
                     <Card.Title>Sell Price: {props.item["Sell Price"]}</Card.Title>
                     <Card.Text><b>Obtained From:</b> {props.item["Obtained From"]}</Card.Text>

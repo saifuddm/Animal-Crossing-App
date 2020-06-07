@@ -18,7 +18,7 @@ class FetchDIY extends React.Component {
 
     async componentDidMount() {
         let featureVAR = this.props.feature
-        const url="https://ac-python-api.herokuapp.com/"+ featureVAR
+        const url="https://ac-python-api.herokuapp.com/"+ featureVAR +"/items"
         console.log(url)
         const response = await fetch(url)
         const dataJSON = await response.json()

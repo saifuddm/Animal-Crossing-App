@@ -26,7 +26,7 @@ class SubItems extends React.Component {
                     <Card.Title>{this.props.item.title}</Card.Title>
                     <Card.Text>{this.props.item.text} </Card.Text>
                     <Link to={`/${this.props.item.type}/${this.props.item.title}`}>
-                        <Button variant="primary">{this.props.item.buttonName}</Button>
+                        <Button variant="outline-primary">{this.props.item.buttonName}</Button>
                     </Link>
                 </Card.Body>
                 </Card>
