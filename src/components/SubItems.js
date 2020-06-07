@@ -21,7 +21,7 @@ class SubItems extends React.Component {
             <div className="sub-item">                
                 {/* Card Style */}
                 <Card style={{ width: '18rem' }}>
-                <Card.Img variant="top" src={images[this.props.item.image]} height="180px" />
+                {/* <Card.Img variant="top" src={images[this.props.item.image]} height="180px" /> */}
                 <Card.Body>
                     <Card.Title>{this.props.item.title}</Card.Title>
                     <Card.Text>{this.props.item.text} </Card.Text>
